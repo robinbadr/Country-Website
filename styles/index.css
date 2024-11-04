@@ -1,0 +1,381 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+.bebas-neue-regular {
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.katibeh-regular {
+	font-family: "Katibeh", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.jost-regular {
+	font-family: "Jost", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
+
+body {
+	font-family: "Jost", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	color: rgb(0, 40, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Katibeh", serif;
+	font-weight: 400;
+}
+	  
+	
+h1 {
+	font-size: 2.5rem;
+	
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+/* Elements
+--------------------------------------------- */
+ul {
+	margin: 1em 0;
+	padding: 0 0 0 2.5em;
+}
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: white;
+}
+
+a:hover,
+a:focus {
+	color: lightgreen;
+	outline: 1px lightgreen;
+}
+
+a:active {
+	color: lightpink;
+	background-color: lightpink;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+#background-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+ }
+
+/* Header
+--------------------------------------------- */
+.site-header {
+	position: fixed;
+	top: 0.5rem;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.site-header-width {
+	max-width: 10rem;
+	margin: 0 auto;
+	padding: 0 .75rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0);
+	height: 5.25rem;
+  	width: 10rem;
+	border-radius: 40px;
+}
+
+/* Main
+--------------------------------------------- */
+/* Layout */
+
+.site-main {
+    width: 80%;
+    margin: 1.25rem auto 0;
+    padding: 0 1rem 2rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.go {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.go-table {
+    width: 100%;
+    max-width: 640px;
+    text-align: left;
+}
+
+.go-table img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.go-table p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.kgq {
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin: 0.25rem auto; 
+    padding: 0.05rem; 
+    max-width: 25rem;
+    border-radius: 15px;
+    background-color: seagreen;
+    color: white;
+    text-align: justify; 
+}
+
+.kg {
+    font-family: "Katibeh", serif;
+    font-size: 1.3rem;
+}
+
+.about {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.title {
+	text-align: center;
+	
+}
+
+.see {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.see-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.see-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.see-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.see-item p {
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+.eat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.eat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.food-item p {
+    text-align: left;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.who {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;	
+}
+
+.who-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.who-table th,
+.who-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.who-table th {
+    background-color: rgba(211, 211, 211, 0.5); 
+    text-align: left; 
+}
+
+.who-table td:first-child {
+    text-align: left; 
+}
+
+.who-table a {
+    color: rgb(0, 40, 0);
+    text-decoration: none;
+}
+
+.who-table a:hover {
+    text-decoration: underline;
+}
+
+.who-title {
+    text-align: center;
+}
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+	text-align: center;
+	padding: 0.5rem;
+	margin: auto;
+	margin-bottom: 3rem;
+	width: 275px;	
+}
+
+.site-footer p {
+	font-size: 0.66rem;	
+}
+
+/* Navigation
+--------------------------------------------- */
+.site-navigation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.site-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: darkred;
+	display: flex;
+	justify-content: space-around;
+}
+
+.site-navigation a {
+	display: block;
+	padding: 0.25rem 0.7rem;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 1.33rem;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+/* Media
+--------------------------------------------- */
+@media (max-width: 640px) {
+
+.site-navigation a {
+		font-size: 1.66rem;
+		padding: 0.5rem 1rem;
+	}
+.see-grid {
+        grid-template-columns: 1fr;
+	}
+}
